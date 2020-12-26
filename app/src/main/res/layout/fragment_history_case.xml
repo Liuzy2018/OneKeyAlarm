@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:padding="30dp"-->
+
+    <!--tools:context=".mvp.HistoryCase.HistoryCaseFragment">-->
+<!--&lt;!&ndash;<TableLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/tlayout_history_case"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:padding="3dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:stretchColumns="*"&ndash;&gt;-->
+    <!--&lt;!&ndash;&gt;&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TableRow>&ndash;&gt;-->
+        <!--&lt;!&ndash;<TextView android:text="案情"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<TextView android:text="时间"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<TextView android:text="地点"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<TextView android:text="描述"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;</TableRow>&ndash;&gt;-->
+<!--&lt;!&ndash;</TableLayout>&ndash;&gt;-->
+    <!--<win.smartown.android.library.tableLayout.TableLayout-->
+        <!--android:id="@+id/main_table"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@android:color/white"-->
+        <!--app:backgroundColorSelected="@color/colorAccent"-->
+        <!--app:tableColumnPadding="32dp"-->
+        <!--app:tableDividerColor="#ddd"-->
+        <!--app:tableDividerSize="1px"-->
+        <!--app:tableRowHeight="48dp"-->
+        <!--app:tableTextColor="#333"-->
+        <!--app:tableTextColorSelected="#fff"-->
+        <!--app:tableTextSize="14dp" />-->
+
+<!--</LinearLayout>-->
+<win.smartown.android.library.tableLayout.FreeScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.HistoryCase.HistoryCaseFragment">
+    <win.smartown.android.library.tableLayout.TableLayout
+        android:id="@+id/main_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:backgroundColorSelected="@color/colorAccent"
+        app:tableColumnPadding="32dp"
+        app:tableDividerColor="#ddd"
+        app:tableDividerSize="1px"
+        app:tableRowHeight="48dp"
+        app:tableTextColor="#333"
+        app:tableTextColorSelected="#fff"
+        app:tableTextSize="14dp" />
+
+</win.smartown.android.library.tableLayout.FreeScrollView>

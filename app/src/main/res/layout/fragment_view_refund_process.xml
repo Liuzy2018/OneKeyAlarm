@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_view_refund_process"
+    android:orientation="vertical"
+    tools:context=".mvp.Refund.ViewRefundProcess.ViewRefundProcessFragment">
+
+    <!--<cugxg.com.onekeyalarm.layout.MutiProgress-->
+        <!--android:id="@+id/mp_1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--app:nodesNum="4"-->
+        <!--app:currNodeState="1"-->
+        <!--app:currNodeNO="2"-->
+        <!--app:nodeRadius="10dp"-->
+        <!--app:processingLineColor="#7B68EE"-->
+        <!--app:unprogressingDrawable="@drawable/ic_round_ddd"-->
+        <!--app:progressingDrawable="@drawable/ic_completed"-->
+        <!--app:progresFailDrawable="@drawable/ic_error"-->
+        <!--app:progresSuccDrawable="@drawable/ic_checked"/>-->
+    <cugxg.com.onekeyalarm.layout.NodeProgressBar
+        android:id="@+id/ssl"
+        android:layout_width="match_parent"
+        android:layout_height="110dip"
+        android:layout_margin="15dip" />
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Button.Default"
+    android:id="@+id/btn_reload_file"
+    android:text="重新提交材料"
+    android:layout_margin="20dp"/>
+</LinearLayout>

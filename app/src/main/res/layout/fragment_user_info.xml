@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.UserInfo.UserInfoFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名：" />
+
+            <EditText
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:inputType="textPersonName" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别：" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogroup"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioman"
+                    android:layout_weight="1"
+                    android:text="男"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiowoman"
+                    android:layout_weight="1"
+                    android:text="女"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            android:layout_height="0.5dip"
+            android:background="#686868"
+            android:layout_width="match_parent"
+            android:layout_alignBottom="@id/linearLayout"
+            android:paddingTop="5dp"
+            android:id="@+id/line1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/line1"
+            android:id="@+id/linearLayout1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身份证号：" />
+
+            <EditText
+                android:id="@+id/txt_id_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <View
+            android:layout_height="0.5dip"
+            android:background="#686868"
+            android:layout_width="match_parent"
+            android:layout_alignBottom="@id/linearLayout1"
+            android:paddingTop="5dp"
+            android:id="@+id/line2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/line2"
+            android:id="@+id/linearLayout2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地址：" />
+
+            <EditText
+                android:id="@+id/txt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress" />
+        </LinearLayout>
+
+        <View
+            android:layout_height="0.5dip"
+            android:background="#686868"
+            android:layout_width="match_parent"
+            android:layout_alignBottom="@id/linearLayout2"
+            android:paddingTop="5dp"
+            android:id="@+id/line3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignTop="@id/line3"
+            android:id="@+id/EmergencyListsLinearLayout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="紧急联系人" />
+            <TableLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/EmergencyLists">
+                <TableRow>
+                    <TextView android:text="@string/name" android:layout_width="80dp" android:layout_gravity="left"/>
+                    <TextView android:text="@string/phone" android:layout_width="150dp" android:layout_gravity="left"/>
+                    <TextView android:text="@string/delete" android:layout_gravity="center_horizontal"/>
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                style="@style/Button"
+                android:id="@+id/btn_add_emergency"
+                android:gravity="center_vertical"
+                android:text="添加联系人" />
+
+            <View
+                android:layout_height="0.5dip"
+                android:background="#686868"
+                android:layout_width="match_parent"
+                android:layout_alignBottom="@id/EmergencyListsLinearLayout"
+                android:layout_marginTop="15dp"
+                android:id="@+id/line4"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/line4"
+                android:layout_marginTop="15dp"
+                style="@style/Button.Default"
+                android:text="@string/btn_save"
+                android:id="@+id/btn_save"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

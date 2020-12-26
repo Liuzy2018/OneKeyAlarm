@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#d81b21</color>
+    <color name="layout_title">#008EEF</color>
+
+    <color name="colorControlNormal">#CCCCCC</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#cfd14e</color>
+    <color name="buttonYellow">#f3f517</color>
+    <color name="colorDivide">#F9F9F9</color>
+    <!--页面默认背景色-->
+    <color name="colorBackground">#F9F9F9</color>
+    <!--文字颜色-->
+    <color name="textWhite">#FFFFFF</color>
+    <color name="textBlack">#333333</color>
+    <color name="textBrown">#6A4A57</color>
+    <color name="textPink">#FE88A8</color>
+    <color name="textMaple">#977F8A</color>
+    <color name="textLightBlue">#96D6EF</color>
+    <color name="textRed">#ED5543</color>
+    <color name="textGrayish">#999999</color>
+    <color name="textGray">#666666</color>
+
+    <!--酷炫黑-->
+    <color name="colorPrimaryDarkBlack">#010001</color>
+    <color name="colorPrimaryBlack">#010001</color>
+    <color name="colorAccentBlack">#010001</color>
+
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.TracingFragment">
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/yellow"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textBlack"
+            android:gravity="center"
+            android:id="@+id/phone_imea"
+            android:text="手机标识："/>
+    </LinearLayout>
+
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/tracing_mapView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_top"
+
+        android:clickable="true"/>
+    <LinearLayout
+        android:id="@+id/layout_tracing_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btn_trace"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="轨迹绘制"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:id="@+id/btn_gather"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="查看好友位置"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="55dp" />
+
+    </LinearLayout>
+</RelativeLayout>
